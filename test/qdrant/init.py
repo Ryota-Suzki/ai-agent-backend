@@ -1,4 +1,3 @@
-
 from backend.src.qdrant.qdrant import init_database
 
 
