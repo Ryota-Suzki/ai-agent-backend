@@ -27,6 +27,11 @@ class Settings(BaseSettings):
         default="default-repo", description="インジェスト対象のリポジトリID"
     )
 
+    # --- CORS設定 ---
+    cors_origins: str = Field(
+        default="http://localhost:5173", description="許可されるオリジン"
+    )
+
     model_config = SettingsConfigDict(
         env_file=".env", env_file_encoding="utf-8", extra="ignore"
     )
