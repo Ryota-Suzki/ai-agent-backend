@@ -1,0 +1,10 @@
+.venv
+.vscode
+
+# 環境
+.env.*
+.env
+
+# キャッシュ
+__pycache__/
+*.py[cod]
